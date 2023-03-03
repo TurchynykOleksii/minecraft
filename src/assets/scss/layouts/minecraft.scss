@@ -1,0 +1,97 @@
+.minecraft {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    width: 198px;
+    height: 198px;
+    background: #a1ca6b;
+    filter: blur(59.6386px);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: -100px;
+    width: 198px;
+    height: 198px;
+    background: #db8c44;
+    filter: blur(75.7059px);
+    z-index: -1;
+  }
+}
+
+.minecraft__container {
+  padding-top: 33px;
+}
+
+.minecraft__appeal {
+  padding: 62px 33px 42px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0px 9.94506px 19.8901px rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(35px);
+  border-radius: var(--radius-20);
+  p {
+    position: relative;
+    text-align: center;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: -50px;
+      background-size: contain;
+    }
+    &:before {
+      background-image: url('../images/minecraft/section3_bl_boy.png');
+      width: 74px;
+      height: 46px;
+      left: 0;
+    }
+    &:after {
+      background-image: url('../images/minecraft/section3_gr_boy.png');
+      width: 60px;
+      height: 45px;
+      right: 0;
+    }
+  }
+}
+
+.minecraft__btn {
+  margin-top: 19px;
+  padding: 12px 45px;
+
+  background-color: var(--green-btn-bg);
+  border-radius: var(--radius-22);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.minecraft__about {
+  margin-top: 66px;
+  margin-bottom: 66px;
+}
+.minecraft__engaged {
+  margin-top: 66px;
+}
+
+.minecraft__dating-headline {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-family: var(--font-bold);
+}
+.minecraft__dating-text {
+  margin-bottom: 19px;
+  p {
+    &:first-child {
+      margin-bottom: 14px;
+    }
+  }
+}
