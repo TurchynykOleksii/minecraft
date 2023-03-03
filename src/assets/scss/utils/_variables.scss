@@ -1,5 +1,7 @@
 @function HexToRGB($hex) {
-  @return red($hex), green($hex), blue($hex);
+  @return red($hex),
+  green($hex),
+  blue($hex);
 }
 
 :root {
@@ -27,7 +29,9 @@
   --radius-50: 50%;
   --radius-41: 41px;
   --radius-26: 26px;
+  --radius-33: 33px;
   --radius-22: 22px;
+  --radius-20: 20px;
   --radius-18: 18px;
   --radius-13: 13px;
 
