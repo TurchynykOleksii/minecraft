@@ -1,0 +1,19 @@
+@import './vendors/modern-normalize';
+
+//utils
+@import './utils/mixins';
+@import './utils/variables';
+
+//base
+@import './base/fonts';
+@import './base/common';
+@import './base/container';
+@import './base/section';
+
+//components
+@import './components/hero';
+
+//layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/footer';

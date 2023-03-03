@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(mobile) {
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include mq(tablet) {
+    max-width: 744px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include mq(desktop) {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

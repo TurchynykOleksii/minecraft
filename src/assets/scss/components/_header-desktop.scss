@@ -1,0 +1,78 @@
+.header {
+  &__desktop,
+  &__list,
+  &__navigation {
+    display: none;
+    @include mq(desktop) {
+      display: flex;
+    }
+  }
+  &__desktop {
+    justify-content: space-between;
+  }
+  &__list {
+    gap: 24px;
+  }
+  &__link {
+    font-size: 17px;
+    color: var(--gray-txt);
+    line-height: calc(18 / 17);
+  }
+  &__navigation {
+    align-items: center;
+  }
+  &__desktop-text {
+    max-width: 126px;
+    font-size: 12px;
+  }
+  &__desktop-logo {
+    display: flex;
+    gap: 4px;
+  }
+  &__contact {
+    display: flex;
+  }
+  &__contact-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  &__contact-item {
+    &:first-child {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__cities-name {
+    color: var(--accent-cl);
+    font-size: 20px;
+    line-height: calc(26 / 20);
+  }
+  &__phone-number {
+    color: var(--accent-cl);
+    font-family: var(--main-font-bold);
+    font-weight: 700;
+    font-size: 20px;
+  }
+  &__button {
+    position: relative;
+    padding: 13px 7px;
+    background-color: var(--accent-cl);
+    color: var(--white-txt);
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: calc(18 / 17);
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 7px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 9px;
+      height: 6px;
+      border-top: solid 6px white;
+      border-left: solid 6px transparent;
+      border-right: solid 6px transparent;
+    }
+  }
+}
