@@ -235,6 +235,10 @@
 
 .minecraft__engaged {
   margin-top: 66px;
+
+  @include mq(desktop) {
+    margin-top: 116px;
+  }
 }
 
 .minecraft__dating {
