@@ -8,8 +8,22 @@
     padding-top: 113px;
     padding-bottom: 52px;
   }
+  @include mq(desktop) {
+    padding-top: 113px;
+    padding-bottom: 52px;
+  }
   .container {
     .hero__wrapper {
+      @include mq(tablet) {
+        //display: flex;
+        // position: relative;
+        // padding-bottom: 144px;
+      }
+
+      @include mq(tablet) {
+        max-width: 434px;
+        font-size: var(--size-20);
+      }
       .hero__title {
         margin-bottom: 14px;
         font-family: var(--font-bold);
@@ -19,6 +33,10 @@
         @include mq(tablet) {
           max-width: 527px;
           font-size: var(--size-32);
+        }
+        @include mq(desktop) {
+          max-width: 705px;
+          font-size: var(--size-46);
         }
       }
       .hero__text {
@@ -30,25 +48,53 @@
           max-width: 434px;
           font-size: var(--size-20);
         }
+        @include mq(desktop) {
+          max-width: 500px;
+          font-size: var(--size-24);
+        }
       }
+
       .hero__textAfter {
         margin-bottom: 9px;
         font-family: var(--font-bold);
         font-size: var(--size-14);
-        line-height: 1.15;
+        line-height: 1.16;
         color: var(--white-txt);
+        @include mq(tablet) {
+          max-width: 224px;
+          font-size: var(--size-18);
+        }
+        @include mq(desktop) {
+          max-width: 506px;
+          font-size: var(--size-24);
+        }
       }
       .hero__button {
-        padding: 10px 32px;
+        padding: 12px 21px;
         background-color: var(--green-btn-bg);
         border-radius: var(--radius-22);
         box-shadow: 0px 3.70588px 6.17647px rgba(0, 9, 40, 0.23);
+        font-family: var(--font-bold);
         font-size: var(--size-14);
         line-height: 1.2;
+        @include mq(tablet) {
+          font-size: var(--size-18);
+        }
+        @include mq(desktop) {
+          font-size: var(--size-30);
+        }
       }
       .hero__img {
+        margin-top: -35px;
+        margin-left: -15px;
+        max-width: 100%;
         @include mq(tablet) {
-          max-width: 373px;
+          // position: absolute;
+          // bottom: 0;
+          // left: 0;
+          max-width: 524px;
+          margin-top: -65%;
+          margin-left: 40%;
         }
       }
     }
