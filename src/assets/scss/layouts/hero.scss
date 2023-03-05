@@ -12,18 +12,20 @@
     padding-top: 113px;
     padding-bottom: 52px;
   }
+
   .container {
     .hero__wrapper {
       @include mq(tablet) {
-        //display: flex;
-        // position: relative;
-        // padding-bottom: 144px;
       }
-
       @include mq(tablet) {
         max-width: 434px;
         font-size: var(--size-20);
       }
+      @include mq(desktop) {
+        max-width: 705px;
+        font-size: var(--size-20);
+      }
+
       .hero__title {
         margin-bottom: 14px;
         font-family: var(--font-bold);
@@ -35,10 +37,12 @@
           font-size: var(--size-32);
         }
         @include mq(desktop) {
+          margin-bottom: 17px;
           max-width: 705px;
           font-size: var(--size-46);
         }
       }
+
       .hero__text {
         margin-bottom: 27px;
         font-size: var(--size-16);
@@ -49,6 +53,7 @@
           font-size: var(--size-20);
         }
         @include mq(desktop) {
+          margin-bottom: 60px;
           max-width: 500px;
           font-size: var(--size-24);
         }
@@ -65,10 +70,12 @@
           font-size: var(--size-18);
         }
         @include mq(desktop) {
+          margin-bottom: 32px;
           max-width: 506px;
           font-size: var(--size-24);
         }
       }
+
       .hero__button {
         padding: 12px 21px;
         background-color: var(--green-btn-bg);
@@ -81,20 +88,24 @@
           font-size: var(--size-18);
         }
         @include mq(desktop) {
+          padding: 18px 43px;
           font-size: var(--size-30);
         }
       }
+
       .hero__img {
         margin-top: -35px;
         margin-left: -15px;
         max-width: 100%;
         @include mq(tablet) {
-          // position: absolute;
-          // bottom: 0;
-          // left: 0;
           max-width: 524px;
           margin-top: -65%;
           margin-left: 40%;
+        }
+        @include mq(desktop) {
+          max-width: 900px;
+          margin-top: -75%;
+          margin-left: 62%;
         }
       }
     }
