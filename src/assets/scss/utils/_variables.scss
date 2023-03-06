@@ -1,5 +1,7 @@
 @function HexToRGB($hex) {
-  @return red($hex), green($hex), blue($hex);
+  @return red($hex),
+  green($hex),
+  blue($hex);
 }
 
 :root {
@@ -33,10 +35,13 @@
   --radius-18: 18px;
   --radius-15: 15px;
   --radius-13: 13px;
+  --radius-12: 12px;
 
   /* SHADOW */
   --black-shadow-7: 0px 10px 20px rgba(0, 0, 0, 0.07);
   --black-shadow-25: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+  --button-shadow: 0px 3px 6px rgba(0, 9, 40, 0.23);
 
   --shadow-header: 0px 1px 3px rgba(0, 0, 0, 0.2);
 
@@ -61,21 +66,15 @@
 
   /* GRADIENT*/
   --yellow-gt: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ffe7a7 100%);
-  --purple-gt: radial-gradient(
-    50% 50% at 50% 50%,
-    #ffffff 34.99%,
-    #ffe1fd 100%
-  );
-  --orange-gt: radial-gradient(
-    50% 50% at 50% 50%,
-    #ffffff 37.79%,
-    #ffe0ce 86.98%
-  );
+  --purple-gt: radial-gradient(50% 50% at 50% 50%,
+      #ffffff 34.99%,
+      #ffe1fd 100%);
+  --orange-gt: radial-gradient(50% 50% at 50% 50%,
+      #ffffff 37.79%,
+      #ffe0ce 86.98%);
   --blue-gt: radial-gradient(50% 50% at 50% 50%, #ffffff 32.29%, #cadcf4 100%);
-  --violet-gt: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(255, 255, 255, 0) 0%,
-    #ded9ff 100%
-  );
+  --violet-gt: radial-gradient(50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0) 0%,
+      #ded9ff 100%);
   --green-gt: radial-gradient(50% 50% at 50% 50%, #ffffff 26.75%, #ccf1a6 100%);
 }

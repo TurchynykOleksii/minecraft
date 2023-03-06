@@ -171,6 +171,7 @@
   border-radius: var(--radius-22);
   font-size: 14px;
   font-weight: 500;
+  box-shadow: var(--button-shadow);
 
   @include mq(desktop) {
     margin-top: 34px;
