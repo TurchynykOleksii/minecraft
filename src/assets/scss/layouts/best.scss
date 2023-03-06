@@ -1,5 +1,6 @@
 .best {
   padding-bottom: 66px;
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -21,9 +22,8 @@
         margin-bottom: 50px;
       }
       @include mq(desktop) {
-        width: 100%;
         justify-content: space-around;
-        margin-bottom: 50px;
+        margin-bottom: 104px;
       }
       .list-before__item {
         display: flex;
@@ -64,15 +64,25 @@
       }
     }
     .best__content-box {
+      margin-bottom: 65px;
       @include mq(tablet) {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: stretch;
+        margin-bottom: 80px;
+        @include mq(desktop) {
+          width: 100%;
+          align-items: center;
+          margin-bottom: 116px;
+        }
       }
       .best__text-box {
         @include mq(tablet) {
           max-width: 322px;
+        }
+        @include mq(desktop) {
+          max-width: 586px;
         }
         .best__title {
           font-family: var(--font-bold);
@@ -81,6 +91,9 @@
           margin-bottom: 16px;
           @include mq(tablet) {
             font-size: var(--size-24);
+          }
+          @include mq(desktop) {
+            font-size: var(--size-40);
           }
         }
         .best__text-bold {
@@ -91,6 +104,9 @@
           @include mq(tablet) {
             font-size: var(--size-16);
           }
+          @include mq(desktop) {
+            font-size: var(--size-24);
+          }
         }
         .best__text {
           font-size: var(--size-14);
@@ -99,14 +115,21 @@
           @include mq(tablet) {
             font-size: var(--size-16);
           }
+          @include mq(desktop) {
+            font-size: var(--size-20);
+          }
         }
       }
       .best__img {
-        margin-bottom: 65px;
         @include mq(tablet) {
           width: 285px;
           height: 275px;
           margin-right: 44px;
+        }
+        @include mq(desktop) {
+          width: 577px;
+          height: 561px;
+          margin-right: 74px;
         }
       }
     }
@@ -122,6 +145,11 @@
         font-size: var(--size-24);
         margin-bottom: 40px;
       }
+      @include mq(desktop) {
+        max-width: 867px;
+        font-size: var(--size-40);
+        margin-bottom: 69px;
+      }
     }
     .best__list-end {
       display: flex;
@@ -132,6 +160,11 @@
         flex-direction: row;
         gap: 16px;
       }
+      @include mq(desktop) {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+      }
       .list-end__item {
         display: flex;
         align-items: center;
@@ -140,12 +173,20 @@
         @include mq(tablet) {
           gap: 18px;
         }
+        @include mq(tablet) {
+          gap: 29px;
+        }
+
         .item__img {
           width: 68px;
           height: 68px;
           @include mq(tablet) {
             width: 60px;
             height: 60px;
+          }
+          @include mq(desktop) {
+            width: 123px;
+            height: 123px;
           }
         }
         .item__text {
@@ -154,6 +195,9 @@
           max-width: 203px;
           @include mq(tablet) {
             font-size: var(--size-12);
+          }
+          @include mq(desktop) {
+            font-size: var(--size-20);
           }
         }
       }
