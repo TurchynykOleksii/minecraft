@@ -1,0 +1,114 @@
+.mncrft__teachers {
+  padding: 33px 0;
+}
+
+.mncrft__teachers--pagination {
+  padding: 10px 0;
+  position: relative;
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+  .swiper-pagination-bullet {
+    position: relative;
+    opacity: 1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      background: #D9D9D9;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    &-active {
+      &:before {
+        width: 17px;
+        height: 17px;
+        background: #4F8235;
+      }
+    }
+  }
+}
+
+.mncrft__teachers-imgitem {
+  max-width: 282px;
+  margin: 0 auto;
+
+  @include mq(desktop) {
+    max-width: 455px;
+  }
+}
+
+.mncrft__teachers-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include mq(tablet) {
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+  }
+
+  @include mq(desktop) {
+    gap: 92px;
+  }
+}
+
+.mncrft__teachers-wrap {
+  width: 100%;
+
+  @include mq(tablet) {
+    max-width: 260px;
+  }
+
+  @include mq(desktop) {
+    max-width: 455px;
+  }
+}
+
+.mncrft__teachers-textblock {
+  margin-bottom: 22px;
+
+  h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-family: var(--font-black);
+
+    @include mq(tablet) {
+      font-size: 24px;
+    }
+
+    @include mq(desktop) {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: calc(18/14);
+
+    @include mq(tablet) {
+      max-width: 322px;
+      font-size: 16px;
+    }
+
+    @include mq(desktop) {
+      max-width: 100%;
+      font-size: 20px;
+    }
+  }
+
+  p:not(p:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @include mq(desktop) {
+    max-width: 500px;
+  }
+}
