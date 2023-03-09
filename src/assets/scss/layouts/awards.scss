@@ -1,0 +1,44 @@
+.mncrft__awards {
+  padding-bottom: 33px;
+  padding-top: 33px;
+  .mncrft__container {
+    h2 {
+      font-family: var(--font-bold);
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      @include mq(tablet) {
+        font-size: 24px;
+      }
+      @include mq(desktop) {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      li {
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          max-height: 100px;
+          margin-bottom: 10px;
+        }
+        h3 {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
