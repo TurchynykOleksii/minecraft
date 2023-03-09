@@ -1,12 +1,16 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="icon-svg-ok" viewBox="0 0 31 32">
-<path fill="#777376" style="fill: var(--color1, #777376)" d="M30.769 16.429c0 8.486-6.879 15.365-15.365 15.365s-15.365-6.879-15.365-15.365c0-8.486 6.879-15.365 15.365-15.365s15.365 6.879 15.365 15.365z"></path>
-<path fill="#fff" style="fill: var(--color2, #fff)" d="M12.111 21.038l-3.842-3.841c-0.196-0.198-0.468-0.321-0.768-0.321s-0.572 0.123-0.768 0.321l-0 0c-0.198 0.196-0.321 0.468-0.321 0.768s0.123 0.572 0.321 0.768l4.598 4.6c0.428 0.427 1.12 0.427 1.547 0l11.635-11.623c0.198-0.196 0.321-0.468 0.321-0.768s-0.123-0.572-0.321-0.768l-0-0c-0.196-0.198-0.468-0.321-0.768-0.321s-0.572 0.123-0.768 0.321l-10.867 10.864z"></path>
+<symbol id="icon-Union" viewBox="0 0 32 32">
+<path d="M18.286 0h-4.571v13.714h-13.714v4.571h13.714v13.714h4.571v-13.714h13.714v-4.571h-13.714v-13.714z"></path>
 </symbol>
-<symbol id="icon-svg-ok-color" viewBox="0 0 31 32">
-<path fill="#78b55a" style="fill: var(--color3, #78b55a)" d="M30.769 16.429c0 8.486-6.879 15.365-15.365 15.365s-15.365-6.879-15.365-15.365c0-8.486 6.879-15.365 15.365-15.365s15.365 6.879 15.365 15.365z"></path>
-<path fill="#fff" style="fill: var(--color2, #fff)" d="M12.112 21.038l-3.842-3.841c-0.196-0.198-0.468-0.321-0.768-0.321s-0.572 0.123-0.768 0.321l-0 0c-0.198 0.196-0.321 0.468-0.321 0.768s0.123 0.572 0.321 0.768l4.598 4.6c0.428 0.427 1.12 0.427 1.547 0l11.635-11.623c0.198-0.196 0.321-0.468 0.321-0.768s-0.123-0.572-0.321-0.768l-0-0c-0.196-0.198-0.468-0.321-0.768-0.321s-0.572 0.123-0.768 0.321l-10.867 10.864z"></path>
+<symbol id="icon-small-right-ar" viewBox="0 0 20 32">
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.6" d="M2 2l14 14-14 13"></path>
+</symbol>
+<symbol id="icon-small-left-ar" viewBox="0 0 20 32">
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.6" d="M18 2l-14 14 14 13"></path>
+</symbol>
+<symbol id="icon-close-icn" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6" d="M4 28l12-12M28 4l-12 12M16 16l-12-12M16 16l12 12"></path>
 </symbol>
 </defs>
 </svg>
