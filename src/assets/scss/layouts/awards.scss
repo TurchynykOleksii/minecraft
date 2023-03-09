@@ -1,7 +1,19 @@
 .mncrft__awards {
   padding-bottom: 33px;
   padding-top: 33px;
+  @include mq(tablet) {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  @include mq(desktop) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
   .mncrft__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     h2 {
       font-family: var(--font-bold);
       font-size: 20px;
@@ -9,9 +21,11 @@
       margin-bottom: 20px;
       @include mq(tablet) {
         font-size: 24px;
+        max-width: 440px;
       }
       @include mq(desktop) {
         font-size: 40px;
+        max-width: 600px;
       }
     }
 
@@ -19,24 +33,56 @@
       font-size: 12px;
       text-align: center;
       margin-bottom: 15px;
+      @include mq(tablet) {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      @include mq(desktop) {
+        font-size: 16px;
+        margin-bottom: 90px;
+        max-width: 810px;
+      }
     }
+
     ul {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
+      @include mq(tablet) {
+        width: 100%;
+      }
 
       li {
         flex-basis: 30%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        img {
-          max-height: 100px;
-          margin-bottom: 10px;
+        @include mq(tablet) {
+          flex-basis: 50%;
         }
+
+        img {
+          max-height: 110px;
+          margin-bottom: 10px;
+          @include mq(tablet) {
+            max-height: 200px;
+          }
+          @include mq(desktop) {
+            max-height: 300px;
+          }
+        }
+
         h3 {
           font-size: 12px;
           text-align: center;
+          @include mq(tablet) {
+            font-size: 14px;
+            max-width: 155px;
+          }
+          @include mq(desktop) {
+            font-size: 24px;
+            max-width: 270px;
+          }
         }
       }
     }
