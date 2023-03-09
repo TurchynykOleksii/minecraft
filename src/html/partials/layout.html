@@ -2,15 +2,17 @@
 
 <!DOCTYPE html>
 <html lang="{{ lang }}">
-  <head>
-    {%include 'head.html' %}
-  </head>
 
-  <body>
-    {% include 'gtm.html' %}
+<head>
+  {%include 'head.html' %}
+</head>
 
-    <div class="page">{% block content %} {% endblock %}</div>
+<body>
+  {% include 'gtm.html' %}
 
-    <script src="assets/js/app.js"></script>
-  </body>
+  <div class="page">{% block content %} {% endblock %}</div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>

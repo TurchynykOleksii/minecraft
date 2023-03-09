@@ -33,8 +33,8 @@
 /* MEDIA QUERIES*/
 @mixin mq($range) {
   $mobile: 375px;
-  $tablet: 744px;
-  $desktop: 1440px;
+  $tablet: 730px;
+  $desktop: 1280px;
 
   @if $range ==mobile-only {
     @media (max-width: #{$tablet - 0.02}) {
